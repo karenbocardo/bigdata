@@ -31,3 +31,5 @@ Key concepts which you need to know after reading:
 - What is **list comprehension**
 - **Mutable** and **Immutable** data types.
 - Comparison operators
+
+> notes can be found in [](highlights.md)
