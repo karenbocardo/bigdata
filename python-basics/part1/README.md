@@ -12,7 +12,7 @@ Learn about:
 - [https://docs.python.org/3/tutorial/controlflow.html](https://www.google.com/url?q=https://docs.python.org/3/tutorial/controlflow.html&sa=D&source=editors&ust=1670345078811769&usg=AOvVaw1ZYZc-RLntdJI7eLpJJOz-)
 - [https://docs.python.org/3/tutorial/datastructures.html](https://www.google.com/url?q=https://docs.python.org/3/tutorial/datastructures.html&sa=D&source=editors&ust=1670345078812112&usg=AOvVaw25wJXjtcfmK2bS-vpsCB2R)
 
-Try to practice by following the steps from the articles on your local machine.pbgterri_11@hotmail.com
+Try to practice by following the steps from the articles on your local machine.
 
 Key concepts which you need to know after reading:
 
@@ -31,5 +31,3 @@ Key concepts which you need to know after reading:
 - What is **list comprehension**
 - **Mutable** and **Immutable** data types.
 - Comparison operators
-
-Practical tasks (open in new tab): [https://github.com/gridu/PYTHON-BASIC/tree/master/practice/1_python_part_1](https://www.google.com/url?q=https://github.com/gridu/PYTHON-BASIC/tree/master/practice/1_python_part_1&sa=D&source=editors&ust=1670345078815167&usg=AOvVaw2uWTLmSHuhWagb0ykGXjqS)
