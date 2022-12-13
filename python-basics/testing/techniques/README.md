@@ -23,7 +23,7 @@ example code does not include basic best practices for simplicity's sake, can be
   - after a function call or: to verify a function’s output
   - within a function: to verify a function’s logic
 
-## steps for exanple
+## steps for example
 
 1. see and error when running: there is a missing key
 
@@ -143,7 +143,7 @@ def initial_transform(data):
 
 ## pytest
 
-> see test script [here](test_testapp.py)
+> see test practice folder [here](pytest/)
 
 test writes a unit test for `initial_transform` to show how to set up a set of expected inputs and outputs and make sure they match up
 1. set up a fixture that will take some parameters and use those to generate the test inputs and expected outputs that I want
@@ -209,14 +209,24 @@ shell output:
 
 ```shell
 (venv) ➜  src git:(main) ✗ pytest python-basics/testing/techniques
-=========================== test session starts ===========================
+============================== test session starts ==============================
 platform darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0
 rootdir: /Volumes/GoogleDrive/My Drive/internship/src
-collected 2 items                                                         
+collected 0 items / 1 error                                                     
 
-python-basics/testing/techniques/test_testapp-pytest.py ..          [100%]
-
-============================ 2 passed in 0.09s ===========================
+==================================== ERRORS =====================================
+_______ ERROR collecting python-basics/testing/techniques/test_testapp.py _______
+python-basics/testing/techniques/test_testapp.py:2: in <module>
+    import testapp as app
+python-basics/testing/techniques/testapp.py:100: in <module>
+    print_person(final_transformed)
+python-basics/testing/techniques/testapp.py:58: in print_person
+    parents = "and".join(person_data['parents'])
+E   KeyError: 'parents'
+============================ short test summary info ============================
+ERROR python-basics/testing/techniques/test_testapp.py - KeyError: 'parents'
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.29s ================================
 ```
 
 5. solve problem
@@ -239,30 +249,110 @@ shell output:
 
 ```shell
 (venv) ➜  src git:(main) ✗ pytest python-basics/testing/techniques
-============================== test session starts ==============================
+=========================== test session starts ===========================
 platform darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0
 rootdir: /Volumes/GoogleDrive/My Drive/internship/src
-collected 0 items / 1 error                                                     
+collected 2 items                                                         
 
-==================================== ERRORS =====================================
-_______ ERROR collecting python-basics/testing/techniques/test_testapp.py _______
-python-basics/testing/techniques/test_testapp.py:2: in <module>
-    import testapp as app
-python-basics/testing/techniques/testapp.py:100: in <module>
-    print_person(final_transformed)
-python-basics/testing/techniques/testapp.py:58: in print_person
-    parents = "and".join(person_data['parents'])
-E   KeyError: 'parents'
-============================ short test summary info ============================
-ERROR python-basics/testing/techniques/test_testapp.py - KeyError: 'parents'
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.29s ================================
+python-basics/testing/techniques/test_testapp-pytest.py ..          [100%]
+
+============================ 2 passed in 0.09s ===========================
 ```
 
-# Integration Testing
+## mocks
+
+> see test practice folder [here](mock/)
+
+- we are only testing a single unit of code, we don’t really care about what other function calls do
+  - want to have a reliable return from them
+
+### example
+outside function call:
+
+```python
+def initial_transform(data):
+    """
+    Flatten nested dicts
+    """
+    for item in list(data):
+        if type(data[item]) is dict:
+            for key in data[item]:
+                data[key] = data[item][key]
+            data.pop(item)
+
+    outside_module.do_something()
+    return data
+```
+
+don’t want to make live calls to `do_something()`, instead, make a **mock** in test script
+- mock will catch this call and return whatever you set the mock to return
+- it is very powerful
+- can be set up in fixtures, since it's a part of test setup to keep setup code together
+- the `do_something` call will be intercepted and return 1
+- take advantage of **fixture parameters** to determine what your **mock returns** (important when a code branch is determined by the result of the outside call)
+
+```python
+@pytest.fixture(params=['nodict', 'dict'])
+def generate_initial_transform_parameters(request, mocker):
+    [...]
+    mocker.patch.object(outside_module, 'do_something')
+    mocker.do_something.return_value(1)
+    [...]
+```
+
+- `side_effect` allows you to mock different returns for successive calls to the same function
+  - set up with a list of outputs (for each successive call) passed to `side_effect`:
+
+testapp
+
+```python
+data.pop(item)
+
+    outside_module.do_something()
+    outside_module.do_something()
+    return data
+```
+
+test_testapp
+```python
+@pytest.fixture(params=['nodict', 'dict'])
+def generate_initial_transform_parameters(request, mocker):
+    [...]
+    mocker.patch.object(outside_module, 'do_something')
+    mocker.do_something.side_effect([1, 2])
+    [...]
+```
+
+## wrapup
+
+### when to use python unit testing frameworks:
+
+- large, complex projects
+- oss projects
+
+### helpful tools:
+
+- [pytest fixtures](https://docs.pytest.org/en/latest/fixture.html)
+- [deepdiff](https://pypi.python.org/pypi/deepdiff) for comparing complex objects
+- mocker
+
+### pros:
+
+- automates running tests
+- can catch many types of bugs
+- simple setup and modification for teams
+
+### cons:
+
+- tedious to write
+- has to be updated with most code changes
+- won’t replicate true application running
+
+# [Integration Testing](https://realpython.com/python-cli-testing/#wrapup_3)
 
 # useful links
 
 - run [pytest](https://docs.pytest.org/en/7.1.x/how-to/usage.html)
 - [visual studio test configuration](https://code.visualstudio.com/docs/python/testing)
 - [how to unit test Flask applications with the minimum viable test suite](https://realpython.com/the-minimum-viable-test-suite/)
+- [set up mock servers to test third-party APIs](https://realpython.com/testing-third-party-apis-with-mock-servers/)
