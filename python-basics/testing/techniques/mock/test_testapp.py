@@ -1,5 +1,6 @@
 import pytest
 import testapp as app
+import othermodule as outside_module
 
 # whenever the decorated function is used, it’ll be used with every parameter, 
 # so just calling generate_initial_transform_parameters will call it twice, once with nodict as a parameter and once with dict
