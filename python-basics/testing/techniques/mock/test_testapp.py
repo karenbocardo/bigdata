@@ -1,12 +1,16 @@
 import pytest
-import testapppytest as app
+import testapp as app
 
 # whenever the decorated function is used, it’ll be used with every parameter, 
 # so just calling generate_initial_transform_parameters will call it twice, once with nodict as a parameter and once with dict
 @pytest.fixture(params=['nodict', 'dict']) # decorator to declare the following function definition a fixture
-def generate_initial_transform_parameters(request): # named parameter params to use with generate_initial_transform_parameters
+def generate_initial_transform_parameters(request, mocker): # named parameter params to use with generate_initial_transform_parameters
     # add the pytest special object request to our function signature to access parameters
     
+    # mocks
+    mocker.patch.object(outside_module, 'do_something')
+    mocker.do_something.return_value(1) # now every time you call initial_transform, the do_something call will be intercepted and return 1
+
     # set up the input and expected output
     test_input = {
         'name': 'John Q. Public',
