@@ -1,3 +1,5 @@
+import othermodule as outside_module
+
 #  flatten the other dictionaries
 # first call this function
 '''
