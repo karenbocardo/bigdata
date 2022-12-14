@@ -1,6 +1,6 @@
 # techniques to test CLI apps
 
-> cheat sheet:
+> [cheat sheet:](python-testing-techniques.pdf)
 
 the main thing to keep in mind is that you’re just comparing the outputs your code generates to the outputs you expect. everything follows from that.
 
