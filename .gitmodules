@@ -1,0 +1,4 @@
+[submodule "python-basics/testing/python-basics/testing/pytest/repo/tau-intro-to-pytest"]
+	path = python-basics/testing/python-basics/testing/pytest/repo/tau-intro-to-pytest
+	url = https://github.com/AndyLPK247/tau-intro-to-pytest
+	branch = example/develop
