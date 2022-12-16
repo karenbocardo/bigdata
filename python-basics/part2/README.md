@@ -1,5 +1,7 @@
 # python part 2
 
+> gridu module instructions [here](module.md)
+
 > style guide and coding conventions: https://peps.python.org/pep-0008/
 > codetags: https://peps.python.org/pep-0350/
 
