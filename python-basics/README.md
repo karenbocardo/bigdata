@@ -3,4 +3,4 @@ ordered list of modules:
 2. [python part 2](part2)
 3. [testing](testing)
 4. [python part 3](part3)
-5. [adittional common python topics](additional)
+5. [adittional common python topics](adittional)
