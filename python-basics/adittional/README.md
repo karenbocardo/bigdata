@@ -1,5 +1,3 @@
-# 
-
 # Additional Common Python Topics
 
 **Description**
@@ -26,7 +24,7 @@ Key concepts which you need to know after reading:
 - What is the **package**
 - Why is the package manager **required** in the first place
 - Basic **functions** of a package manager
-1. Learn about pip: [https://realpython.com/what-is-pip/](https://www.google.com/url?q=https://realpython.com/what-is-pip/&sa=D&source=editors&ust=1671237776610390&usg=AOvVaw1led0Wp4VbE1cc74xCTILp)
+2. Learn about pip: [https://realpython.com/what-is-pip/](https://www.google.com/url?q=https://realpython.com/what-is-pip/&sa=D&source=editors&ust=1671237776610390&usg=AOvVaw1led0Wp4VbE1cc74xCTILp)
 
 Key concepts which you need to know after reading:
 
@@ -37,7 +35,7 @@ Key concepts which you need to know after reading:
 - The problem with **hardcoding** the versions of your packages and their dependencies
 - Difference between **development** and **production** dependencies
 - Which **alternatives** exist
-1. Learn about **PyPI**: [https://realpython.com/pypi-publish-python-package/](https://www.google.com/url?q=https://realpython.com/pypi-publish-python-package/&sa=D&source=editors&ust=1671237776612764&usg=AOvVaw2K_-lPzeYqdkEw4l-hgh0a)
+3. Learn about **PyPI**: [https://realpython.com/pypi-publish-python-package/](https://www.google.com/url?q=https://realpython.com/pypi-publish-python-package/&sa=D&source=editors&ust=1671237776612764&usg=AOvVaw2K_-lPzeYqdkEw4l-hgh0a)
 
 Key concepts which you need to know after reading:
 
@@ -46,7 +44,7 @@ Key concepts which you need to know after reading:
 - **Versioning** your package
 - **Documenting** your package
 - **Upload** your package to PyPI
-1. Learn about **venv**: [https://realpython.com/python-virtual-environments-a-primer/](https://www.google.com/url?q=https://realpython.com/python-virtual-environments-a-primer/&sa=D&source=editors&ust=1671237776614406&usg=AOvVaw0gUJvBqJ7mIPteSaiS0Ys5) (you can skip section with **virtualenvwrapper**)
+4. Learn about **venv**: [https://realpython.com/python-virtual-environments-a-primer/](https://www.google.com/url?q=https://realpython.com/python-virtual-environments-a-primer/&sa=D&source=editors&ust=1671237776614406&usg=AOvVaw0gUJvBqJ7mIPteSaiS0Ys5) (you can skip section with **virtualenvwrapper**)
 
 Try to practice by following the steps from the article on your local machine.
 
@@ -58,7 +56,7 @@ Key concepts which you need to know after reading:
 - How to **create** venv
 - How to **activate/deactivate** venv
 - How to **install/upgrade** packages inside venv
-1. Learn about **Python Environment**: [https://realpython.com/effective-python-environment/](https://www.google.com/url?q=https://realpython.com/effective-python-environment/&sa=D&source=editors&ust=1671237776616542&usg=AOvVaw195f1khvUTV5fwjKD29gAx)
+5. Learn about **Python Environment**: [https://realpython.com/effective-python-environment/](https://www.google.com/url?q=https://realpython.com/effective-python-environment/&sa=D&source=editors&ust=1671237776616542&usg=AOvVaw195f1khvUTV5fwjKD29gAx)
 
 Key concepts which you need to know after reading:
 
@@ -74,7 +72,7 @@ Serious software development calls for **performance optimization**. Finding ou
 
 **Learning path**
 
-1. Learn about **Profilers**: [https://docs.python.org/3/library/profile.html](https://www.google.com/url?q=https://docs.python.org/3/library/profile.html&sa=D&source=editors&ust=1671237776619396&usg=AOvVaw1FhJgpXBPDuSKYK27Rgm8D)
+6. Learn about **Profilers**: [https://docs.python.org/3/library/profile.html](https://www.google.com/url?q=https://docs.python.org/3/library/profile.html&sa=D&source=editors&ust=1671237776619396&usg=AOvVaw1FhJgpXBPDuSKYK27Rgm8D)
 
 Try to practice by following the steps from the article on your local machine.
 
@@ -99,7 +97,7 @@ Key concepts which you need to know after reading:
 - What is data **serialization**
 - Difference between **serialization** and **deserialization**
 - Use cases
-1. Learn about **JSON**:
+2. Learn about **JSON**:
 - [https://www.json.org/json-en.html](https://www.google.com/url?q=https://www.json.org/json-en.html&sa=D&source=editors&ust=1671237776622727&usg=AOvVaw2Qs91i9rLeU_fYTvXVNhcr)
 - [https://docs.python.org/3/library/json.html](https://www.google.com/url?q=https://docs.python.org/3/library/json.html&sa=D&source=editors&ust=1671237776623042&usg=AOvVaw17tG1lU5fpaDqD5ILbHygz)
 
@@ -114,7 +112,7 @@ Key concepts which you need to know after reading:
 - How to **deserialize** JSON object to Python object
 - Difference between **loads()** and **load()**
 - Difference between **dumps()** and **dump()**
-1. Learn about **XML**:
+3. Learn about **XML**:
 - [https://en.wikipedia.org/wiki/XML](https://www.google.com/url?q=https://en.wikipedia.org/wiki/XML&sa=D&source=editors&ust=1671237776625460&usg=AOvVaw2_rF0CAhmaAReJlaVc8mB0)
 - [https://lxml.de/tutorial.html](https://www.google.com/url?q=https://lxml.de/tutorial.html&sa=D&source=editors&ust=1671237776625907&usg=AOvVaw3cdEvlY3XoUPLXGQf3_DNs)
 
