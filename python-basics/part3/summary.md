@@ -30,4 +30,9 @@
 - https://docs.python.org/3/tutorial/stdlib2.html
 - [re](https://docs.python.org/3/library/re.html#module-re)
 - [doctest](https://docs.python.org/3/library/doctest.html#module-doctest)
-- 
+
+
+# next steps
+- [ ] fix tests so they follow test structures
+- [ ] learn more about modules from standard libraries
+- [ ] take notes
