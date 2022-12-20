@@ -93,3 +93,8 @@ Homepage = "https://github.com/realpython/reader"
 [project.scripts]
 realpython = "reader.__main__:main"
 ```
+
+# next steps
+
+- [ ] read about python packages and releasing an app
+- [ ] see real python articles
