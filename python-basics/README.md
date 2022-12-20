@@ -4,3 +4,4 @@ ordered list of modules:
 3. [testing](testing)
 4. [python part 3](part3)
 5. [adittional common python topics](adittional)
+6. [web scrapping](web-scraping)
