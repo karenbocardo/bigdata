@@ -1,5 +1,7 @@
 # introduction to BigData
 
+> notes can be found [here](week1.md)
+
 [Approx. 17 hours to complete]
 
 Link to the course: https://www.coursera.org/learn/big-data-introduction
