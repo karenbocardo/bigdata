@@ -176,3 +176,20 @@ Organizations are realizing the detrimental outcomes of this rigid structure. An
 As a summary, organizations are gaining significant benefit from integrating big data practices into their culture and breaking their silos. Some major benefits to organizations are operational efficiency, improved marketing outcomes, higher profits, and improved customer satisfaction.
 
 ### the key: integrating diverse data
+
+real value comes from integrating different types of data; **data integration** means bringing together data from diverse sources and turning them into coherent and more useful information. **turning complex data into something useful.**
+1. discovering, accessing, monitoring
+2. modeling, transforming
+
+why do we need it? data integration &rarr; 
+1. richer data
+2. increase data collaboration
+   - reduce data complexity
+   - increase data availability
+   - unify your data system
+  
+Overall by integrating diverse data streams you add value to your big data and improve your business even before you start analyzing it.
+
+> extra resources:
+> - [McKinsey report](http://www.mckinsey.com/business-functions/business-technology/our-insights/big-data-the-next-frontier-for-innovation)
+> - [The WIFIRE Project](https://www.youtube.com/watch?v=0ohwGggaXZM)
