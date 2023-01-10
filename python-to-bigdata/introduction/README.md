@@ -1,6 +1,9 @@
 # introduction to BigData
 
-> notes can be found [here](week1.md)
+notes for each week content:
+1. [week 1](week1.md)
+2. [week 2](week2.md)
+3. [week 3](week3.md)
 
 [Approx. 17 hours to complete]
 
