@@ -148,6 +148,42 @@ at the heart of the big data challenge is turning all of the other dimensions in
 
 # data science: getting value out of big data
 
+**data science**: basis for empirical research where data is used to induce information for *observations*. turns data into *insights* or even *actions*.
+- big data &harr; insight &harr; action
+- **observations**: data (big data) related to a business or scientific case
+- **insights**: the data products of data science. extracted from data through exploratory data analysis and modeling: 
+  - big data `+` analysis and question &rarr; insight
+- it is not static, involves a process where models are constantly improved
+- using data science and analysis of the past and current information, data science generates **actions**: it is a generation of *actionable information* for the future
+  -  historical data `+` near real-time data `=` **prediction**
+- happens at the intersection of:
+  1. computer science
+     - advanced computing
+     - data engineering
+     - domain expertise
+     - data visualization
+     - machine learning
+  2. mathematics
+    - statistics
+      - statistical modeling
+    - scientific method
+    - relational algebra
+    - problem solving
+    - (and other sets of expertise that require **deeper knowledge** and skills)
+  3. business expertise
+     - business pasion
+  - (a lot of skills to have for a single person)
+
+> (image of list of skills from slides)
+
+  - in reality, data scientists are teams of people who act like one
+
+data scientists:
+- are passionate about the story and the meaning behind data
+- understand the problem they are trying to solve
+- aim to find the right analytical methods to solve this problem
+- have an interest in engineering solutions to solve problems
+
 ## defining the question
 
 ## the process of data analysis
