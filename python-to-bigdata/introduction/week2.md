@@ -148,6 +148,10 @@ at the heart of the big data challenge is turning all of the other dimensions in
 
 # data science: getting value out of big data
 
+## defining the question
+
+### getting value out of big data
+
 **data science**: basis for empirical research where data is used to induce information for *observations*. turns data into *insights* or even *actions*.
 - big data &harr; insight &harr; action
 - **observations**: data (big data) related to a business or scientific case
@@ -183,7 +187,175 @@ data scientists:
 - understand the problem they are trying to solve
 - aim to find the right analytical methods to solve this problem
 - have an interest in engineering solutions to solve problems
+- have curiosity about each others work
+- have communication skills to interact with the team and present their ideas and result to others
 
-## defining the question
+As a summary, a data science team often comes together to analyze situations, business or scientific cases, which none of the individuals can solve on their own. There are lots of moving parts to the solution. But in the end, all these parts should come together to provide actionable insight based on big data.
+
+Being able to use evidence-based insight in business decisions is more important now than ever. Data scientists have a combination of technical, business and soft skills to make this happen.
+
+### building a big data strategy
+
+**strategy**: plan of action or policy designed to achieve a major or overall aim
+1. aim
+2. policy
+3. plan
+4. action 
+
+**big data strategy**
+
+when building one, we look at:
+- what we have
+- what high level goals we want to achieve
+- what we need to do to get there
+- what are the policies around data from the beggining to the end
+
+steps to build one:
+  
+1. starts with big **objectives** (goals): identify which data is useful and why by focusing on what data to collect
+   - these are questions to turn big data into advantage for your business
+   - once defined, look at what you have and analyze the gaps and actions to get there
+   - focus on short and long term objectives
+   - each company needs to evaluate how data science or big data analytics would add value to their business objectives
+2. create a culture to embrace that analytics can help your business: provide organizational **buy-in**
+   - a big data strategy must have: 
+     - commitment
+     - sponsorship
+     - community
+   - goals should be developed with all stakeholders
+3. build data science **team**; a diverse team is necessary to be effective: diverse expertise and diverse as a team
+   - with:
+     - data scientists
+     - application developers
+     - information technologists
+     - business owners
+   - *one for all*: mentality that everyone works together as partners with common goals
+4. build in-house **expertise**: constant training of team members on:
+   - big data tools and analytics
+   - bussiness practices and objectives
+5. open a mini **idea lab**: small data science team whose main job is do data experiments and test new ideas with a research level role
+   - come up with ideas
+   - deploy analytics
+   - include customers in experiments
+   - deploy full scale in case idea works
+6. **share data**: data across the organization is easily accesed and integrated
+   - remove barriers to data access
+   - no data silos
+   - data sharing mindset
+7. defining big data **policies**
+   - privacy and lifetime
+   - curation and quality
+   - interoperability and regulation
+   - questions you should think of addressing around policy:
+     - What are the privacy concerns?
+     - Who should have access to, or control data?
+     - What is the lifetime of data, which is sometimes defined as volatility, anatomy of big data?
+     - How does data get curated and cleaned up?
+     - What ensures data quality in the long term?
+     - How do different parts of your organization communicate or interoperate using this data?
+     - Are there any legal and regulatory standards in place?
+8. cultivate **analytics-driven culture**: analytics `+` business `=` opportunities and growth
+   - analytics is an integral part of doing business
+   - willing to use analytics in driving business decisions
+9. **adapt** strategy to your use cases: make business dynamic in face of change 
+
+#### summary
+
+1. integrate analytics
+2. communicate goals
+3. build teams
+4. share data
+5. adopt for new situations
+
+### five P's of data science
+
+> see [notes](ps.md) for 5 P's from WorDS Center
+
+#### how does big data science happen?: five components of data science
+
+data science: a multi-disciplinary craft that combines [people](#people) teaming up around application-specific [purpose](#purpose) that can be achieved through a [process](#process), big data computing [platforms](#platforms), and [programmability](#programmability).
+
+![alt text](imgs/p-of-data-science.jpg "components of data science")
+
+> all of these should lead to products where the focus really is on the questions or purpose that are defined by your big data strategy ideas.
+
+![alt text](imgs/purpose.png "purpose")
+
+> a typical conversation around the process starts with: *let's not dive into the techniques yet; what is the problem at large? how do we see ourselves solving it?*
+>
+> this leads to **challenges** I can then use to define **problems**
+
+##### people
+
+refers to a data science team or the projects stakeholders; they're expert in data and analytics, business, computing, science, or big data management.
+
+##### purpose
+
+refers to the challenge or set of challenges defined by your big data strategy.
+
+##### process
+
+people with *purpose* will define a process to collaborate and communicate around. it is conceptual in the beginning and defines the set of steps an how everyone can contribute to it
+
+steps (see links for next section notes):
+
+1. big data engineering
+   1. [acquire](#acquiring-data)
+   2. [prepare](#pre-processing-data)
+2. (big data analytics (computational big data science)
+   1. [analyze](#analyzing-data)
+   2. [report](#communicating-results)
+   3. [act](#turning-insights-into-action)
+
+iterating process:
+   
+![](imgs/process.png "process")
+
+> this process should support experimental work and dynamic scalability on the big data and computing platforms
+
+##### platforms
+
+computing platforms to scale different steps. scalability should be in the mind of all team members and get communicated as an expectation.
+
+##### programmability
+
+scalable process should be programmable through utilization of reusable and reproducible programming interfaces to libraries, like systems middleware, analytical tools, visualization environments, and end user reporting environments.
+
+##### sixth p: data product
+
+data science can be defined as a craft of using the five P's identified in this lecture, leading to a sixth P, the data product
+
+### asking the right questions
+
+formulate the question:
+
+1. the first step is to **define the problem** that needs to be addressed, or the opportunity that needs to be ascertained.
+
+> *A problem well defined is a problem half solved.* - Charles F. Kettering
+
+2. **assess the situation** to get an overview of the situation: exercise caution analyzing risks, costs, benefits, contingencies, regulations, resources and requirements of the situation.
+3. **define goals** and objectives based on answers
+   - define success criteria
+
+(transcript of video [here](questions.md))
 
 ## the process of data analysis
+
+### steps in the data science process
+
+1. [acquiring data](#acquiring-data): it includes anything that makes us retrieve data including; finding, accessing, acquiring, and moving data. It includes identification of and authenticated access to all related data. And transportation of data from sources to distributed files systems. It includes way to subset and match the data to regions or times of interest. As we sometimes refer to it as geo-spacial query.
+2. [exploring data](#exploring-data)
+3. [pre-processing data](#pre-processing-data)
+4. [analyzing data](#analyzing-data)
+5. [communicating results](#communicating-results)
+6. [turning insights into action](#turning-insights-into-action)
+
+#### acquiring data
+#### exploring data
+#### pre-processing data
+#### analyzing data
+#### communicating results
+#### turning insights into action
+
+# useful links
+- https://support.typora.io/Draw-Diagrams-With-Markdown/
