@@ -2,7 +2,7 @@
 
 [Approx. 13 hours to complete.]
 
-Link to the course: https://www.coursera.org/learn/big-data-management
+Link to the course: https://www.coursera.org/programs/grid-university-knbtl?collectionId=&currentTab=CATALOG&productId=cvqIZNmpEeW6jg7jFY56EQ&productType=course&showMiniModal=true
 
 Once you’ve identified a big data issue to analyze, how do you collect, store and organize your data using Big Data solutions?  In this course, you will experience various data genres and management tools appropriate for each.  You will be able to describe the reasons behind the evolving plethora of new big data platforms from the perspective of big data management systems and analytical tools.  Through guided hands-on tutorials, you will become familiar with techniques using real-time and semi-structured data examples.  Systems and tools discussed include: AsterixDB, HP Vertica, Impala, Neo4j, Redis, SparkSQL. This course provides techniques to extract value from existing untapped data sources and discovering new data sources.
 
