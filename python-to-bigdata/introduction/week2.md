@@ -343,16 +343,108 @@ formulate the question:
 
 ### steps in the data science process
 
-1. [acquiring data](#acquiring-data): it includes anything that makes us retrieve data including; finding, accessing, acquiring, and moving data. It includes identification of and authenticated access to all related data. And transportation of data from sources to distributed files systems. It includes way to subset and match the data to regions or times of interest. As we sometimes refer to it as geo-spacial query.
-2. [exploring data](#exploring-data)
-3. [pre-processing data](#pre-processing-data)
-4. [analyzing data](#analyzing-data)
-5. [communicating results](#communicating-results)
-6. [turning insights into action](#turning-insights-into-action)
+1. [acquiring data](#acquiring-data):
+   - includes anything that makes us retrieve data:
+     - finding, 
+     - accessing, 
+     - acquiring, 
+     - and moving data
+   - identification of and authenticated access to all related data
+   - transportation of data from sources to distributed files systems
+   - way to subset and match the data to regions or times of interest (geo-spacial query)
+
+2. **preparing data** is divided into two steps: 
+   1. [exploring data](#exploring-data): looking at the data to understand its nature (its quality and format); it takes a preliminary analysis of data or samples of data to understand it 
+   2. [pre-processing data](#pre-processing-data):
+      - **cleaning** data,
+      - sub-setting or **filtering** data,
+      - (**packaging**) creating data which programs can read and understand (modeling raw data into a more defined data model or packaging it using a specific data format)
+      - and if there are multiple data sets involved: **integration** of multiple data sources, or streams
+3. [analyzing data](#analyzing-data): 
+   - **selection of analytical techniques** to use,
+   - **building a model** of the data, 
+   - and **analyzing** results.
+   - (it can take iterations on its own or might require to go back to steps one and two to get more data or package data in a different way)
+4. [communicating results](#communicating-results):
+   -  **evaluation** of analytical results
+   -  **presenting** them in a visual way
+   -  creating **reports** that include an assessment of results with respect to success criteria
+   -  interpret, summarize, visualize, or post process
+5. [turning insights into action](#turning-insights-into-action):  the act step is reporting insights from analysis and determining actions from insights based on the purpose initially defined
+
+> findings from one step may require the previous step to be repeated with new information
 
 #### acquiring data
+
+obtain the source material before analyzing or acting on it:
+1. determine what data is available:
+   - identify suitable data
+   - make use of all data that is relevant to problem for analysis
+2. data comes from many **places** (local and remote), in many **varieties** (structured and un-structured) and, with different **velocities**, such as:
+   - relational databases - accessed through SQL and query browsers
+   - files (like text files or spreadsheets) - use scripting languages to get data from files (like JavaScript, Python, PHP, Perl, R, MATLAB, and are many others)
+   - remote data, web services and websites
+     - with formats like XML (Extensible Markup Language) 
+     - or services like REST (Representational State Transfer)
+     - and web socket services
+   - NoSQL storage systems (like Cassandra, MongoDB and HBASE) which provide APIs to allow users to access data or web service interface such as REST
+
+wifire **example**, aquiring data from wifire:
+- historical weather from SQL: to create models to identify weather patterns 
+- current weather from WebSocket: data is processed and compared to patter found by models to determine if weather station experiences Santa Ana conditions
+- real-time tweets near fire from REST:  to determine the sentiment of these tweets to see if people are expressing fear, anger or are simply nonchalant about the nearby fire.
+- the combination gives sense of urgency
+
+> finding and evaluating data useful to big data analytics is important before acuiring data
+
 #### exploring data
+
+data exploration &rarr; data understanding &rarr; informed analysis
+
+it is part of the two-step data preparation process. it guides the rest of the process. 
+
+why explore? understand data. do a preliminary investigation to gain better understanding of specific characteristics of data; look for things like:
+- correlations: to explore dependencies between variables
+- general trends: show if there is a consistent direction in which values of variables are moving towards
+- outliers: help double check error in data due to measurements or find rare events
+- summary statistics: describe data with values and give an idea of nature of data, this can be
+  - mean and median: measures of the location of a set of values
+  - mode: value that occurs more frequently in data set
+  - range and standard deviation: measures of spred in data
+
+**visualize data**: useful wat to look at data in this preliminary analysis step; the types of graphs that can be used are:
+- heat maps: gives an idea of where hotspots are
+- histograms: show distribution of data and can show skewness or unusual dispersion
+- boxplots: also for data distribution
+- line graphs: see how values change over time and spot spikes in data
+- scatter plots: show correlation between two variables
+- among others
+
 #### pre-processing data
+
+**two** main goals:
+
+1. **clean** data to address **data quality issues** and correct them:
+   - **inconsistent values**
+   - merge **duplicate records**; this requires determining how to resolve conflicting values
+   - remove data with **missing values**
+   - generate estimates for **invalid data**
+   - remove **outliers**
+
+> *In order to address data quality issues effectively, knowledge about the application, such as how the data was collected, the user population, and the intended uses of the application is important. It is essential to making informed decisions on how to handle incomplete or incorrect data.*
+
+2. **transform** raw data to make it suitable for analysis (into the format needed) (also known as data manipulation, data preprocessing, data wrangling and even data munging); operations include:
+   - scaling: involves changing the range of values to be between a specified range
+   - transformation: to reduse noise and variability, but comes at the cost of less detailed data so factors must be weighed for the specific application
+     - aggregation is one type of transformation
+   - feature selection: 
+     - removing redundant or irrelevant features: makes the subsequent analysis much simpler
+     - combining features and creating new features
+     - there are also algorithms to automatically determine the most relevant features, based on various mathematical properties
+   - dimensionality reduction: useful when the data set has a large number of dimensions, involves finding a smaller subset of dimensions that captures most of the variation in the data which reduces the dimensions of the data while eliminating irrelevant features and makes analysis simpler
+     - principle component analysis (PCA): commonly used technique for it
+   - data manipulation
+
 #### analyzing data
 #### communicating results
 #### turning insights into action
