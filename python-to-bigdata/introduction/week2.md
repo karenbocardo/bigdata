@@ -457,34 +457,33 @@ data analysis involves building a **model** from data:
 - input data: the data you have, used by the analysis technique to build a model
 - output data: what the model generates
 
-**categories** of analysis techniques:
-- classification: the goal is to predict the category of the input data, some examples:
-  - weather as sunny, rainy, windy, or cloud
-  - tumor as benign or malignant
-- regression: predict numeric value, for example:
-  - predicting the price of a stock
-  - estimating weekly sales
-  - score on a test
-- clustering: organize similar items into groups, for example:
-  - grouping customers into segments like seniors, adults and teenagers
-  - areas of similar topography (mountains, deserts and plains)
-  - types of weather patterns (raiy, cold, snowy)
-- association analysis: find rules to capture associations between items, the rules are used to determine when items or events occur together
-  - market basket analysis (used to understand customer purchasing behaviour)
-  - famous diaper beer connection
-- graph analysis: use when your data can be transformed into a graph representation with nodes and links, comes when having entities and connections between them (like social networks), examples:
-  - explore spread of disease in hospitals and doctors records
-  - identify security threads monitoring social media, email and text data
-
 **modeling process**:
-1. select technique depending on type of problem
-2. build model with prepared data
-3. validate model applying it to new data samples
+1. **select technique** depending on type of problem; categories of analysis techniques:
+     - classification: the goal is to predict the category of the input data, some examples:
+       - weather as sunny, rainy, windy, or cloud
+       - tumor as benign or malignant
+     - regression: predict numeric value, for example:
+       - predicting the price of a stock
+       - estimating weekly sales
+       - score on a test
+     - clustering: organize similar items into groups, for example:
+       - grouping customers into segments like seniors, adults and teenagers
+       - areas of similar topography (mountains, deserts and plains)
+       - types of weather patterns (raiy, cold, snowy)
+     - association analysis: find rules to capture associations between items, the rules are used to determine when items or events occur together
+       - market basket analysis (used to understand customer purchasing behaviour)
+       - famous diaper beer connection
+     - graph analysis: use when your data can be transformed into a graph representation with nodes and links, comes when having entities and connections between them (like social networks), examples:
+       - explore spread of disease in hospitals and doctors records
+       - identify security threads monitoring social media, email and text data
+
+2. **build model** with prepared data
+3. **validate model** applying it to new data samples; evaluation of results (for each technique):
+   - classification and regression: compare predicted value and correct value
+   - clustering: examine resulted groups to see if they make sense for application
+   - association and graph analysis: investigate and validate if results are correct
 
 > common practice is to divide the prepared data into a set of data for constructing the model and reserving some of the data for evaluating the model after it has been constructed
-
-**evaluation of results**:
-- 
 
 #### communicating results
 #### turning insights into action
