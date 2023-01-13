@@ -482,11 +482,52 @@ data analysis involves building a **model** from data:
    - classification and regression: compare predicted value and correct value
    - clustering: examine resulted groups to see if they make sense for application
    - association and graph analysis: investigate and validate if results are correct
+4. determine next steps
+   - some questions to perform:
+     - hould the analysis be performed with more data in order to get a better model performance? 
+     - would using different data types help? 
+     - do the analysis results suggest a more detailed look at some aspect of the problem?
+   - ideally model performs well with respect to success criteria
 
 > common practice is to divide the prepared data into a set of data for constructing the model and reserving some of the data for evaluating the model after it has been constructed
 
 #### communicating results
+
+this step consists in reporting and communicating insights by presenting results. it can change depending on audience:
+-  look at analysis results and decide what to present, asking these questions:
+   - what is the punchline? (the main results)
+   - what added value do these results provide or how can the model add to the application?
+   - how do the results compare to the success criteria determined at the beginning of the project?
+- show all results, even the ones counter to expected, inconclusive or puzzling
+- how to present: visualization is an important tool presenting results. data exploration tools can be used here but now with output data.
+  - have tables with details in case of wanting to take a deeper dive
+  - most popular open source visualization tools:
+    - R: software package for general data analysis
+    - Python: programming language that has packages that support data analysis and graphics
+    - D3: JavaScript library for producing interactive web based visualizations and data driven documents
+    - Leaflet: JavaScript library to create interactive maps
+    - Tableau Public: allows to create visualizations
+    - Google Charts: provides cross-browser compatibility
+    - Timeline: JavaScript library that allows to create timelines
+
+the point of reporting findings is determining what the next step should be.
+
 #### turning insights into action
+
+1. the next step is to determine what **action** or actions should be taken, based on the insights gained
+2. **implementation**: figure out how to implement the action (stakeholders need to be involved in this change)
+
+![](imgs/implementation.png "implementation")
+
+3. **assess impact**: monitor and measure the impact of the action on the process, it leads to an **evaluation**
+
+![](imgs/assess.png "assess")
+
+As a summary, big data and data science are only useful if the insights can be turned into action, and if the actions are carefully defined and evaluated.
+
+![](imgs/next.png "next")
+
+> transcript of video [here](actions.txt)
 
 # useful links
 - https://support.typora.io/Draw-Diagrams-With-Markdown/
