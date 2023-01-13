@@ -1,6 +1,6 @@
 # Python Engineer to BigData Engineer
 
-## basics part
+## basics courses
 1. [Introduction to Big Data](introduction/README.md)
 2. [Big Data Modeling and Management Systems](modeling_management/README.md)
 3. [Big Data Integration Processing](integration/README.md)
