@@ -144,7 +144,7 @@ dimensions of big data and their challenging dimension:
 
 at the heart of the big data challenge is turning all of the other dimensions into truly useful business **value** (bring value to the problem at hand). generate value out of big data.
 
-> ["small" deifinition of big data](definition.md)
+> ["small" deifinition of big data](transcripts/definition.md)
 
 # data science: getting value out of big data
 
@@ -269,7 +269,7 @@ steps to build one:
 
 ### five P's of data science
 
-> see [notes](ps.md) for 5 P's from WorDS Center
+> see [notes](transcripts/ps.md) for 5 P's from WorDS Center
 
 #### how does big data science happen?: five components of data science
 
@@ -337,7 +337,7 @@ formulate the question:
 3. **define goals** and objectives based on answers
    - define success criteria
 
-(transcript of video [here](questions.md))
+(transcript of video [here](transcripts/questions.md))
 
 ## the process of data analysis
 
@@ -527,7 +527,7 @@ As a summary, big data and data science are only useful if the insights can be t
 
 ![](imgs/next.png "next")
 
-> transcript of video [here](actions.txt)
+> transcript of video [here](transcripts/actions.txt)
 
 # useful links
 - https://support.typora.io/Draw-Diagrams-With-Markdown/
