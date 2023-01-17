@@ -35,7 +35,9 @@ As a summary the commodity clusters are a cost effective way of achieving data p
 
 ### Programming Models for Big Data
 
-> transcript of video [here](transcripts/models.md), slides [here](slides/week3/03-ProgrammingModelsForBigData.pdf)
+- transcript of video [here](transcripts/models.md)
+- slides [here](slides/week3/03-ProgrammingModelsForBigData.pdf)
+- [handwritten notes](notes/models.pdf)
 
 # systems: getting started with Hadoop
 
@@ -44,17 +46,18 @@ As a summary the commodity clusters are a cost effective way of achieving data p
 
 ## getting started with Hadoop
 
-### Hadoop: Why, Where and Who?
+> slides can be found on [this](slides/week3/hadoop/) folder
 
-
-
-### The Hadoop Ecosystem: Welcome to the zoo!
-### The Hadoop Distributed File System: A Storage System for Big Data
-
-### ...
-
+- [assignment](assignment/README.md)
+  
 ## hands on
 
 ### downloading and installing
 
+- [Downloading and Installing the Cloudera VM Instructions (Mac)](slides/Downloading_and_Installing_the_Cloudera_VM_Instructions_(Mac).pdf)
+- [FAQ](slides/FAQ.pdf)
+
 ### running first application
+
+1. [Copy your data into the Hadoop Distributed File System (HDFS) Instructions](slides/Copy_your_data_into_the_Hadoop_Distributed_File_System_(HDFS)_Instructions.pdf)
+2. [Run the WordCount program](slides/Run_the_WordCount_program_Instructions.pdf)

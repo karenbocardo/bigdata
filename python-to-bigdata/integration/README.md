@@ -2,7 +2,7 @@
 
 [Approx. 18 hours to complete]
 
-Link to the course: https://www.coursera.org/programs/grid-university-knbtl?collectionId=&currentTab=CATALOG&productId=uWrCG9mpEeWkdgqomU4otw&productType=course&showMiniModal=true
+Link to the course: https://www.coursera.org/learn/big-data-integration-processing
 
 At the end of the course, you will be able to:
 *Retrieve data from example database and big data management systems
