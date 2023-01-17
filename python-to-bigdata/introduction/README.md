@@ -5,8 +5,6 @@ notes for each week content:
 2. [week 2](week2.md)
 3. [week 3](week3.md)
 
-[Approx. 17 hours to complete]
-
 Link to the course: https://www.coursera.org/learn/big-data-introduction
 
 the three **key sources** of Big Data: 
