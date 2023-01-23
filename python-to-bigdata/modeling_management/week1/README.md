@@ -9,7 +9,11 @@
 
 slides [here](slides/01-SummaryOfIntroductionToBigData.pdf)
 
-### Big Data Management "Must-Ask Questions"
+### Big Data Management 
+
+> slides [here](slides/02-BigDataManagement.pdf)
+
+#### "Must-Ask Questions"
 
 what is data management? must-ask questions about a data application, that range from how we get the data to how we work with it and how we secure it from malicious users
 
@@ -26,11 +30,23 @@ what is data management? must-ask questions about a data application, that range
 **ingestion**: process of getting the data into the data system that we are building or using
 
 large scale systems need more automation and it becomes a part of the big data management infrastructure, so here are questions to ask when automating data ingestion:
-- how many data sources?
+- how many data sources? 
 - how large are data items?
 - will the number of data sources grow?
 - rate of data ingestion?
-- what to do with bad data?
+  
+including ingestion policies:
+- what to do with bad data? error handling policy (it is a rule)
 - what to do when data id too little or too much?
+
+#### examples
+
+hospital
+
+![](imgs/hospital.png)
+
+cloud
+
+![](imgs/cloud.png)
 
 ## Real Big Data Management Applications
