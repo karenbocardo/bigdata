@@ -5,11 +5,11 @@
 notes on each week content:
 
 1. [Introduction to Big Data Modeling and Management](week1/README.md)
-2. Big Data Modeling
-3. Big Data Modeling (Part 2)
-4. Working With Data Models
-5. Big Data Management: The "M" in DBMS
-6. Designing a Big Data Management System for an Online Game
+2. [Big Data Modeling](week2/README.md)
+3. [Big Data Modeling (Part 2)](week3/README.md)
+4. [Working With Data Models](week4/README.md)
+5. [Big Data Management: The "M" in DBMS](week5/README.md)
+6. [Designing a Big Data Management System for an Online Game](week6/README.md)
 
 ## course
 

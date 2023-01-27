@@ -49,6 +49,8 @@ As a summary the commodity clusters are a cost effective way of achieving data p
 > slides can be found on [this](slides/week3/hadoop/) folder
 
 - [assignment](assignment/README.md)
+
+
   
 ## hands on
 
