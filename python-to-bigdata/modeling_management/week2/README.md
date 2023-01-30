@@ -31,11 +31,30 @@ data model operations are a set of operations that can be performed on the data.
 
 some types of operations are performed across all data models:
 - subsetting (also called selection or filtering, depending on context): extract a part of a collection based on a condition
-- substructure extraction: retrieving a part of a structure that is specified
+- substructure extraction (projection): retrieving a part of a structure that is specified
+- union: combining two collections into a new one with elements of both: there are versions where duplicates are not allowed
+- join: combining two collections that have different data content but have common elements
 
 ### data model constraints
 
+constaints are logical statements that must hold for data; they are part of data models because they can specify something about the semantics (the meaning of data)
+
+examples
+- a week has seven and only seven days
+- a movie has only one title (here, the number of titles for a movie is restricted to one)
+
+types:
+- value constraint: logical statement about data values (eg. age is never negative); this value constraints (because they restrict the value of some data property)
+  - type constraint: restrict types (eg. last name alphabetical)
+  - domain constraint: possible set of values allowed for attribute (eg. day between 1 and 31, month 1 to twelve, or january to december)
+  - structural
+- uniqueness constraint (one title per movie)
+- cardinality constraint: check wether it lows between an upper and lower bound (person cat take 0 and 3 blood pressure medications at a time)
+- structural constraints: puts restriction on the structure of the data rather than the data value themselves (eg. matrix has to be sqaured, that is, same number of rows and columns)
+
 ## hands-on: CSV data
+
+explore [csv](../hands-on/big-data-2/csv/census.csv)
 
 ## different kinds of data models (part 1)
 
@@ -43,11 +62,58 @@ some types of operations are performed across all data models:
 
 > slides [here](slides/02_RelationalDataModels.pdf)
 
+relational data:
+- one of the simplest and most frequently used data models today
+- forms the basis of many other traditional database management systems
+- the primary data structure is a **table**
+  - careful about relational tables (relations)
+  - each table it represents a set of tuples
+  - **relational tuples** are rows in the table (a record)
+    - they imply that unless otherwise stated, the elements of it are **atomic** (they represent on unit of information and cannot be decomposed further)
+
+- remember the definition of **set**: a colecction of distinct elements of the same type 
+  - no duplicates
+  - dissimilar tuples disallowed
+
+- attention to the first row of the table (the **scheme**):
+  - schema parts
+    - name of the table: employee
+    - attributes
+      - ID: int (primary key) 
+      - fname: string (not null)
+      - lname: string (not null)
+      - department: enum(HR, IT, Reasearch, Business)
+      - title: string
+      - salary: int (>25000)
+  - it can also specify constraints (the ones inside parenthesis)
+- **foreign keys**: references an attribute from parent table, the values in this column can exist only if the same values in the table being referenced exist
+  - (see slides for example) EmpSalaries.EmpID references Employees.ID: in the terminology of the relational model, the EmpID column of EmpSalaries table is called a foreign key that refers to the primary key of the Employees table
+- joining relations (see join example of **natural join** in slides): common column is represented once in new table
+  - joins are one of the most expensive (time and space consuming operations)
+  - for analytical big data application that needs joins, it's very important to choose a suitable data management platform that makes this operation efficient
+
 ### semistrictured data mdoel
 
 > slides [here](slides/03_SemistructuredDataModel.pdf)
 
+common types:
+- web pages, html
+  - a block is nested within a larger block
+  - have some structure but are more flexible (can have multiple paragraphs, multiple listed items)
+- xml (extensible markup language): standard to represent data
+- json
+  - nested structure, lists of lists of tuples that are key-value pairs (property and value)
+
+generalize all these different forms of semistructured data modeling them as trees (see slides for conversion). **tree data structure**:
+- trees are a well known data structure that allows **navigational access to data**
+
 ## hands-on
+
+exploring
+- [csv](hands-on/01_ExploringtheRelationalDataModelofCSV.pdf)
+- [json](hands-on/02_ExploringtheSemistructuredDataModelofJSONdata.pdf)
+- [array data model of image](hands-on/03_ExploringtheArrayDataModelofanImage.pdf)
+- [sensor data](hands-on/04_ExploringSensorData.pdf)
 
 ### comma separated values (CSV): relational data model
 
