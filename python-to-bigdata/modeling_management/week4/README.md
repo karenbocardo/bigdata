@@ -114,6 +114,28 @@ how do they work? **schema-on-read**
 
 #### data lake vs data warehouse
 
+(traditional) data warehouse
+- stores data in hierarchical file system with a well defined structure
+
+
+data lake
+- stores data as flat files with unique identifier (**objeect storage** in big data systems)
+- data storage
+  - each data is stored as **blob** (binary large object); and is assigned identifier
+  - each data object is tagged and can be searched with it
+  - metadata store is not a problem as long as it is accesible when needed
+  - hadoop
+    - data loaded into HDFS
+    - and processed using data management and analytical systems on commodity clusters
+  - selection of tools based on nature of problem
+
+#### summary
+- a data lake is a storage architecture for big data collection and processing
+- enables collection of all data suitable for analysis today and potentially in the future
+- Regardless of the data source, structure, and format it supports storage of data and transforms it only when it is needed
+- ideally supports all parts of the user base to benefit from this architecture, including business, storage, analytics and computing experts
+-  data lakes are infrastructure components within a big data architecture that can **evolve** over time based on application-specific needs
+
 ## hand-on: handling data streams
 
 ### Exploring Streaming Sensor Data
