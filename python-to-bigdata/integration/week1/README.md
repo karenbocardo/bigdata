@@ -16,4 +16,8 @@ slides of topics with notes:
 
 ## Retrieving Big Data (Part 1)
 
+
+
 ## Hands On
+
+[Querying Relational Data with Postgres](src/Querying_Relational_Data_with_Postgres.pdf)
