@@ -16,7 +16,9 @@ slides of topics with notes:
 
 ## Retrieving Big Data (Part 1)
 
-
+- [What is Data Retrieval?](src/03_What-is-Data-Retrieval.pdf)
+   - Querying two relations
+   - Subqueries
 
 ## Hands On
 
