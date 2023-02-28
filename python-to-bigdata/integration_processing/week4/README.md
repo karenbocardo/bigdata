@@ -9,11 +9,10 @@
 
 ## Big Data Processing Tools and Systems
 
-1. Overview of Big Data Processing Systems
+1. [Overview of Big Data Processing Systems + The Integration and Processing Layer](src/05_OverviewOfBigDataProcessingSystems.pdf)
 2. [Big Data Workflow Management](#big-data-workflow-management)
-3. The Integration and Processing Layer
-4. Introduction to Apache Spark
-5. Getting Started with Spark
+3. [Introduction to Apache Spark](src/06_IntroductionToApacheSpark.pdf)
+4. [Getting Started with Spark](src/07_GettingStartedWithSpark.pdf)
 
 ### Big Data Workflow Management
 
@@ -24,3 +23,7 @@ An important aspect of Big Data applications is the variability of technical nee
 Big Data workflows have been an active research area since the introduction of scientific workflows. After the development and general adoption of MapReduce as a Big Data programming pattern, a number of workflow systems were built or extended to enable programmability of MapReduce applications including Oozie, Nova, Azkaban and Cascading. The Kepler Workflow Environment, developed by the WorDS Center of Excellence at SDSC led by Ilkay Altintas, also provide a distributed data-parallel (DDP) programming module on MapReduce and other BigData programing patterns on top of well-known Hadoop and Spark engines to build and execute big data workflows. The actor-oriented approach of Kepler provides flexibility and improves application programmability due to: (i) its heterogeneous nature in which Big Data programming patterns are placed as part of other workflow tasks; (ii) its visual programming approach that does not require scripting of Big Data patterns; (iii) its adaptability for execution of data parallel applications on different execution engines.
 
 ## Hands-On: Let's Try Spark
+
+- WordCount in Spark
+  - [notebook](bid-data-3/../../big-data-3/notebooks/Spark_WordCount.ipynb)
+  - [instructions](src/WordCount_in_Spark.pdf)
