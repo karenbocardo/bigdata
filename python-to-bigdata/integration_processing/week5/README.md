@@ -2,17 +2,16 @@
 
 ## Programming in Spark
 
-1. Spark Core: Programming In Spark using RDDs in Pipelines
-2. Spark Core: Transformations
-3. Spark Core: Actions
+1. [Spark Core: Programming In Spark using RDDs in Pipelines](src/lesson1/annotated/01_SparkCORE-ProgrammingInSpark.pdf)
+2. [Spark Core: Transformations](src/lesson1/annotated/02_SparkCORE-Transformations.pdf)
+3. [Spark Core: Actions](src/lesson1/annotated/03_SparkCORE-Actions.pdf)
 
 ## Main Modules in the Spark Ecosystem
 
-1. Spark SQL
-2. Spark Streaming
-3. Spark MLLib
-4. Spark GraphX
-5. More on Spark
+1. [Spark SQL](src/lesson2/annotated/01_SparkSQL.pdf)
+2. [Spark Streaming](src/lesson2/annotated/02_SparkMLLib.pdf)
+3. [Spark MLLib](src/lesson2/annotated/03_SparkStreaming.pdf)
+4. [Spark GraphX](src/lesson2/annotated/04_SparkGraphX.pdf)
 
 ## Hands-on: Data Processing in Spark
 

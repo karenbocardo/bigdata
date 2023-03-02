@@ -22,6 +22,19 @@ An important aspect of Big Data applications is the variability of technical nee
 
 Big Data workflows have been an active research area since the introduction of scientific workflows. After the development and general adoption of MapReduce as a Big Data programming pattern, a number of workflow systems were built or extended to enable programmability of MapReduce applications including Oozie, Nova, Azkaban and Cascading. The Kepler Workflow Environment, developed by the WorDS Center of Excellence at SDSC led by Ilkay Altintas, also provide a distributed data-parallel (DDP) programming module on MapReduce and other BigData programing patterns on top of well-known Hadoop and Spark engines to build and execute big data workflows. The actor-oriented approach of Kepler provides flexibility and improves application programmability due to: (i) its heterogeneous nature in which Big Data programming patterns are placed as part of other workflow tasks; (ii) its visual programming approach that does not require scripting of Big Data patterns; (iii) its adaptability for execution of data parallel applications on different execution engines.
 
+### RDDs
+
+RDD stands for Resilient Distributed Datasets and it is a fundamental data structure in Apache Spark.
+
+RDDs are an immutable distributed collection of objects that can be processed in parallel across a cluster of machines. They are partitioned across the cluster and can be cached in memory for faster access. RDDs can be created from data stored in Hadoop Distributed File System (HDFS), local file systems, or any other data source supported by Spark.
+
+RDDs support two types of operations:
+- Transformations: These are operations that create a new RDD from an existing one. Transformations are lazy and do not execute immediately. Examples of transformations include map, filter, and groupBy.
+- Actions: These are operations that trigger computation on an RDD and return a result to the driver program or write data to an external storage system. Actions are eagerly evaluated and can trigger the execution of one or more transformations. Examples of actions include count, collect, and save.
+
+RDDs provide fault tolerance by keeping track of the lineage of transformations used to create them, so that they can be re-computed in case of node failures. This allows Spark to handle machine failures transparently and recover lost data automatically.
+Overall, RDDs are a powerful abstraction that allows developers to write distributed data processing applications with ease and efficiency, while taking advantage of the fault tolerance and scalability of the underlying Spark cluster.
+
 ## Hands-On: Let's Try Spark
 
 - WordCount in Spark
